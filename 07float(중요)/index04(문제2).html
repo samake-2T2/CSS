@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer{
+            border: 1px solid #777;
+            width: 70%;
+            margin: 0 auto;
+
+            overflow: hidden;
+        }
+
+        .img, .inner{
+            width: 50.0000%;
+            float:left;
+            box-sizing: border-box;
+        }
+
+        .inner {
+            border: 1px solid #777;
+
+            overflow: hidden;
+        }
+
+        .top, .bottom{
+            border: 1px solid #777;
+        }
+
+        .top{
+            padding-bottom: 50px;
+        }
+        
+        .left{
+            float:left;
+        }
+
+        .right{
+            float:right;
+        }
+        
+        .cart{
+            overflow: hidden;
+            clear: both;
+            text-align:center;
+        }
+
+        button {
+            border: 1px solid #777;
+            float: left;
+            width: 50.0000%;
+
+            box-sizing: border-box;
+            background-color: #f5efef;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="outer">
+        <div class="img">
+            <img src="img/fish.png">
+        </div>
+        <div class="inner">
+            <div class="top">
+                <div>
+                    제목:패딩바텀 50px;
+                </div>
+                <div>
+                    내용:gg
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    가격
+                </div>
+                <div class="right">
+                    10000원
+                </div>
+                <div class="cart">
+                    <button>장바구니</button>
+                    <button>구매하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
