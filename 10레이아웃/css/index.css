@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+
+/* 전체너비 960px */
+#main_header {
+    width: 960px;
+    height: 160px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#main_header .title {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+#main_header .main_gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#main_header .main_lnb {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+/* 메인 메뉴 */
+.main_gnb ul {
+    overflow: hidden;
+}
+
+.main_gnb ul li {
+    float: left;
+}
+
+.main_gnb ul li a {
+    display: block;
+    padding: 5px 8px;
+    border: 1px solid black;
+}
+
+.main_gnb ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* 요소중 index번쨰의 표현 - 요소:nth-child(n) {...} */
+.main_gnb ul li:first-child a {
+    border-radius: 8px 0 0 8px;
+}
+
+.main_gnb ul li:last-child a {
+    border-radius: 0 8px 8px 0;
+}
+
+/* 서브 메뉴 */
+.main_lnb ul {
+    overflow: hidden;
+}
+
+.main_lnb ul li {
+    float: left;
+}
+
+.main_lnb ul li a {
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid black;
+}
+
+.main_lnb ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.main_lnb ul li:first-child a {
+    border-radius: 8px 0 0 8px;
+}
+
+.main_lnb ul li:last-child a {
+    border-radius: 0 8px 8px 0;
+}
+
+/* 본문 */
+#content {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#content .main_section {
+    float: left;
+    width: 750px;
+}
+
+#content .main_article {
+    border: 1px solid #777;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#content .main_aside {
+    float: right;
+    width: 200px;
+    border: 1px solid #777;
+}
+
+/* 탭 영역 */
+.main_aside > .buttons {
+    overflow: hidden;
+}
+.main_aside > .buttons > label {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.tab-content ul li a {
+    display: block;
+    
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.tab-content ul li a span {
+    display: block;
+    height: 50px;
+    overflow: hidden;
+}
+
+.left {
+    display: block;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+
+.right {
+    width: 140px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    height: 45px;
+}

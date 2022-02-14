@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 500px;
+            border: 1px solid #777;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            box-sizing: border-box; /* 패딩과 보더가 사이즈에 포함되어 500이 맞춰짐 */
+        }
+
+        .wrap-img {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .wrap-img img {
+            width: 50px;
+        }
+
+        .wrap-content textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            resize: vertical; /* 세로만 사이징 */
+        }
+
+        .wrap-content,
+        .wrap-control {
+            padding-left: 60px;
+        }
+
+        .wrap-control {
+            overflow: hidden;
+        }
+
+        .wrap-input {
+            float: left;
+        }
+
+        .wrap-control button {
+            float: right;
+        }
+
+        .wrap-input input {
+            display: block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+
+        .outer {
+            width: 500px;
+            border: 1px solid #777;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .outer-img {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .outer-img img {
+            width: 50px;
+        }
+
+        .inner {
+            padding-left: 60px;
+            overflow: hidden;
+        }
+
+        .content {
+            float: left;
+        }
+
+        .inner button {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="wrap-img">
+            <!-- 이미지영역 -->
+            <img src="img/fish.png" alt="프로필">
+        </div>
+        <div class="wrap-content">
+            <!-- 텍스트영역 -->
+            <textarea rows="10" placeholder="댓글등록"></textarea>
+        </div>
+        <div class="wrap-control">
+            <!-- 버튼영역 -->
+            <div class="wrap-input">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button>등록하기</button>
+        </div>
+    </div>
+
+    <!-- 글영역 -->
+    <div class="outer">
+        <div class="outer-img">
+            <img src="img/fish.png">
+        </div>
+        <div class="inner">
+            <div class="content">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
+            <div>
+                <button>삭제</button>
+                <button>수정</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
