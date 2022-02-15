@@ -34,6 +34,7 @@ html, body {
 }
 
 #main_header .main_gnb {
+    margin-top: 10px;
     position: absolute;
     right: 0;
     top: 0;
@@ -127,42 +128,68 @@ html, body {
     border: 1px solid #777;
 }
 
-/* 탭 영역 */
+/* 탭영역 */
 .main_aside > .buttons {
     overflow: hidden;
 }
 .main_aside > .buttons > label {
+    height: 25px;
+    line-height: 25px;
     float: left;
     width: 50%;
     text-align: center;
     background-color: #333;
-    color: white;
+    color: #fff;
 }
 
 .tab-content ul li a {
     display: block;
-    
-    padding: 5px;
-    box-sizing: border-box;
+    height: 45px;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #333; 
 }
+
+.tab-content ul li:nth-child(1) a {
+    border-top: none;
+} /* 첫번쨰 상자만 제외 */
 
 .tab-content ul li a span {
     display: block;
-    height: 50px;
+}
+
+.tab-content ul li a .thumbs {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.tab-content ul li a .content {
+    padding-left: 55px;
+}
+
+.tab-content ul li a .content > strong, 
+.tab-content ul li a .content > p {
+    font-size: 15px;
+}
+
+.tab-content ul li a .content > strong {
+     /* 넘어가는 컨텐츠 내용에 대해서 생략...처리 */
+    font-size: 15px;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    display: block; 
+    width: 125px; 
     overflow: hidden;
 }
 
-.left {
-    display: block;
-    float: left;
-    height: 45px;
-    line-height: 45px;
-}
 
-.right {
-    width: 140px;
-    display: block;
-    float: left;
-    margin-left: 5px;
-    height: 45px;
+/* footer */
+footer {
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; 
 }
