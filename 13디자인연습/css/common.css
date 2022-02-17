@@ -31,3 +31,13 @@ section, article {
     border-radius: 0;
 }
 
+/* 제목 */
+.titlebox {
+    margin: 70px auto;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+}
